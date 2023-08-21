@@ -27,9 +27,10 @@
 def cut(text_to_cut, string_cuter)
 	new_array = []
 	
-	text_to_cut.split(string_cuter)
+	elelment_array = text_to_cut.split(string_cuter)
+	new_array << elelment_array
 
-return 
+return new_array
 end
 
 #GESTION D'ERREUR
