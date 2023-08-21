@@ -13,17 +13,6 @@
 #Afficher error et quitter le programme en cas de problèmes d’arguments.
 
 #FONCTION
-
-#GESTION D'ERREUR
-
-#PARSING
-
-#RESOLUTION
-
-#AFFICHAGE
-
-
-#FONCTION
 def cut(text_to_cut, string_cuter)
 	new_array = []
 	
