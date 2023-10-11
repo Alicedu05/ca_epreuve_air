@@ -25,11 +25,11 @@ abort("error") if ARGV.empty?
 #abort("error") if ARGV.join !~ /[a-zA-Z]/ # concatene tous les mot de la chaine pour verifier si il n'y à que des lettres passées en arguments 
 
 #PARSING
- string_to_join =ARGV[0..-2]
+ string_to_join = ARGV[0..-2]
  scotch = ARGV[-1]
 
 #RESOLUTION
 result = concat(string_to_join, scotch)
 
 #AFFICHAGE
-puts result.inspect
+puts result

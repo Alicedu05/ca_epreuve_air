@@ -35,5 +35,4 @@ cuter = ARGV[1]
 result = cut(to_cut, cuter)
 
 #AFFICHAGE
-
 puts result

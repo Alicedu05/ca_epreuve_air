@@ -24,7 +24,7 @@ def compare(string_list, model)
 		word.each_char do |char|
 			i = 0
 			while i < word.size
-				if char == model
+				if char == model || char == model.upcase
 					identical = true
 					break
 				end

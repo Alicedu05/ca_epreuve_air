@@ -74,4 +74,4 @@ number_array = cut(to_cut, cuter)
 result = insert(number_array[0],number_array[1])
 
 #AFFICHAGE
-print result
+print result. join(" ")

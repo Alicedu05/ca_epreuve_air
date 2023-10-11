@@ -44,7 +44,7 @@ end
 #GESTION D'ERREUR
 abort("error") if ARGV.size < 2
 abort("error") if ARGV.empty?
-abort("error") if ARGV =~ /[a-zA-Z\s]/
+abort("error") if ARGV.any? { |arg| arg =~ /[a-zA-Z]/ }
 abort("error") if File.extname(ARGV[0]) == ".txt"
 
 #PARSING

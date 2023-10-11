@@ -36,5 +36,4 @@ cuter = /[,\s\n]+/
 result = cut(to_cut, cuter)
 
 #AFFICHAGE
-
 puts result
