@@ -27,6 +27,7 @@ def does_exist(value)
   else 
     test_number += 1
     result_exist << "\e[31mair#{value} (#{test_number}/#{test_size}) : failure\e[0m\n"
+    $test_failure << result_exist
   end
   return result_exist
 
@@ -50,6 +51,7 @@ def compare(script, exits, value)
   else
     test_number += 1
     result_compare << "\e[31mair#{value} (#{test_number}/#{test_size}) : failure\e[0m\n"
+    $test_failure << result_compare
   end
   return result_compare
 
@@ -72,6 +74,7 @@ def fun(script, exits, value)
   else
     test_number += 1
     result_compare << "\e[31mair#{value} (#{test_number}/#{test_size}) : failure\e[0m\n"
+    $test_failure << result_compare
   end
   return result_compare
   
@@ -81,6 +84,7 @@ end
 unit_test = []
 test_size = unit_test.size
 $compteur_succes = 0
+$test_failure = []
 
 argument_air00 = "\"Salut les gars\""
 argument_air01 = "\"Crevette magique dans la mer des étoiles\" \"la\""
@@ -144,6 +148,7 @@ end
 puts unit_test
 test_cumul = unit_test.size
 puts "\e[32mTotal success:(#{$compteur_succes}/#{test_cumul})\e[0m"
+#puts $test_failure le petit plus pour le suivit des erreurs
 
 
 
